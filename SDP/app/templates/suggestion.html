@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main-content %}
+{% for d in disease %}
+<div class="container">
+  <div class="bg-primary ">
+    <h1 class=" p-2 text-center text-white my-5">{{percentage}}% Chances to have disease {{d.name_disease}}</h1>
+  </div>
+</div>
+{% endfor %}
+
+
+
+
+<div class="row">
+  <div class="col-4"></div>
+  <div class="col-6">
+    <div class="card" style="width: 22rem;">
+      <img class="card-img-top" src="{{doctor.image.url}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{doctor.name}}</h5>
+        <p class="card-text">{{doctor.specialist}}</p>
+        <p class="card-text">{{doctor.free}}</p>
+        <a href="{% url 'takepre' %}" class="btn btn-primary">Take Prescription</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock main-content %}

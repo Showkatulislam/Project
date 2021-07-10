@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block main-content %}
+{% for d in obj %}
+<div> <h1  class=" container bg-primary my-20 text-center text-white my-5">Your possible Disease: {{d.name_disease}}</h1> </div>
+{% endfor %}
+  <!-- 1st hospital Slider -->
+  <div class="m-3">
+    <h2 class="">Suggestion hospital</h2>
+    <!-- Slider 1 -->
+    <div class="owl-carousel" id="slider1">
+        {% for h in hospital %}
+        <a href="{% url 'doctor' h.id %}" class="btn"><div class="item"><img src="{{h.image.url}}" alt="" height="200px"><span class="fw-bold">{{h.name}}</span><br><strong class="fs-5 text-danger">{{h.locals}}</strong><br><span class="fs-5">{{h.specialist}}</span></div></a>
+        {% endfor %}
+    </div>
+   </div>
+   <!-- End 1st hospital Slider -->
+{% endblock main-content %}

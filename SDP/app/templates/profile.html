@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block color %}
+<style>
+    form{
+        background: rgba(0,0,0,0.3);
+    }
+</style>
+
+{% endblock color %}
+{% block main-content %}
+
+<div> <h1  class=" container bg-primary my-20 text-center my-5"> welcome {{request.user}}</h1> </div>
+<div class="row my-3">
+<div class="col-sm-6 offset-sm-3">
+    <h1 class="text-center bg-info">Select your Symptom</h1>
+    <form action="/suggestion" method="get">
+        <div class="row">
+            <div class="col">
+                {% for i in obj  %}
+                <h5 class=" px-2"><input class="ml-2 border-dark" type="checkbox" name="{{forloop.counter}}" value="{{i.name}}" id="">   {{i.name|capfirst}}</h5>
+                {% endfor %}
+            </div>
+        </div>
+
+        <button type="submit" class="form-control bg-danger text-white">Submit</button>
+    </form>
+</div>
+</div>
+
+{% endblock main-content %}

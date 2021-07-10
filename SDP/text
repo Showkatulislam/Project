@@ -1,0 +1,101 @@
+ <p class="alert alert-primary fw-bold">Select First Symptom</p>
+        <select name="sypmptom1" id="" class="form-select mb-4">
+            <option value="1">Symptom</option>
+            <option value="2">Symptom</option>
+            <option value="3">Symptom</option>
+            <option value="4">Symptom</option>
+            <option value="5">Symptom</option>
+            <option value="6">Symptom</option>
+            <option value="7">Symptom</option>
+        </select>
+
+
+        <p class="alert alert-primary  fw-bold">Select Second Symptom</p>
+        <select name="sypmptom2" id="" class="form-select mb-4">
+            <option value="1">Symptom</option>
+            <option value="2">Symptom</option>
+            <option value="3">Symptom</option>
+            <option value="4">Symptom</option>
+            <option value="5">Symptom</option>
+            <option value="6">Symptom</option>
+            <option value="7">Symptom</option>
+        </select>
+
+        <p class="alert alert-primary  fw-bold">Select Third Symptom</p>
+        <select name="sypmptom3" id="" class="form-select mb-4">
+            <option value="1">Symptom</option>
+            <option value="2">Symptom</option>
+            <option value="3">Symptom</option>
+            <option value="4">Symptom</option>
+            <option value="5">Symptom</option>
+            <option value="6">Symptom</option>
+            <option value="7">Symptom</option>
+        </select>
+
+
+        <p class="alert alert-primary  fw-bold">Select Fourth Symptom</p>
+        <select name="sypmptom4" id="" class="form-select mb-4">
+            <option value="1">Symptom</option>
+            <option value="2">Symptom</option>
+            <option value="3">Symptom</option>
+            <option value="4">Symptom</option>
+            <option value="5">Symptom</option>
+            <option value="6">Symptom</option>
+            <option value="7">Symptom</option>
+        </select>
+
+
+        <p class="alert alert-primary  fw-bold">Select Fifth Symptom</p>
+        <select name="sypmptom5" id="" class="form-select mb-4">
+            <option value="1">Symptom</option>
+            <option value="2">Symptom</option>
+            <option value="3">Symptom</option>
+            <option value="4">Symptom</option>
+            <option value="5">Symptom</option>
+            <option value="6">Symptom</option>
+            <option value="7">Symptom</option>
+        </select>
+
+
+        <p class="alert alert-primary  fw-bold">Select Sixth Symptom</p>
+        <select name="sypmptom6" id="" class="form-select mb-4">
+            <option value="1">Symptom</option>
+            <option value="2">Symptom</option>
+            <option value="3">Symptom</option>
+            <option value="4">Symptom</option>
+            <option value="5">Symptom</option>
+            <option value="6">Symptom</option>
+            <option value="7">Symptom</option>
+        </select>
+
+
+
+
+        <p class="alert alert-primary  fw-bold">Select Seventh Symptom</p>
+        <select name="sypmptom7" id="" class="form-select mb-4">
+            <option value="1">Symptom</option>
+            <option value="2">Symptom</option>
+            <option value="3">Symptom</option>
+            <option value="4">Symptom</option>
+            <option value="5">Symptom</option>
+            <option value="6">Symptom</option>
+            <option value="7">Symptom</option>
+        </select>
+        <div class="text-center">
+
+
+
+
+            # if request.method=='POST':
+        # sypmptom1= request.POST['sypmptom1']
+        # sypmptom2= request.POST['sypmptom2']
+        # sypmptom3= request.POST['sypmptom3']
+        # sypmptom4= request.POST['sypmptom4']
+        # sypmptom5= request.POST['sypmptom5']
+        # sypmptom6= request.POST['sypmptom6']
+        # sypmptom7= request.POST['sypmptom7']
+        # obj=Disease.objects.filter(Q(symptom1=sypmptom1) 
+        # and Q(symptom2=sypmptom2) and Q(symptom3=sypmptom3)
+        # and Q(symptom4=sypmptom4) and Q(symptom5=sypmptom5)
+        # and Q(symptom6=sypmptom6) and Q(symptom7=sypmptom7))
+        # hospital=Hospital.objects.all()
